@@ -34,3 +34,18 @@ Atenção:
 Nunca esqueça de utilizar o parênteses antes de executar uma função.
 
 """
+def cantar_parabens():
+	print('parabens pra voce')
+	print('nessa data querida')
+	print('muitas felicidades')
+	print('muitos anos de vida')
+	print('viva ao aniversáriamente...')
+
+"""
+for n in range(5):
+	print(n)
+	cantar_parabens()
+"""
+# Em Python podemos inclusive criar variáveis do tipo de uma função e executar esta função através da variável
+canta = cantar_parabens
+canta()
