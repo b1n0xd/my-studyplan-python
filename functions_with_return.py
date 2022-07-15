@@ -97,8 +97,7 @@ from random import random
 
 def joga_moeda():
 	# Gera um numero psudo-randomico entre 0 e 1
-	valor = random()
-	if valor > 0.5:
+	if random() > 0.5:
 		return 'Cara'
 	return 'Coroa'
 
