@@ -88,18 +88,28 @@ print(outra_funcao())
 print(type(outra_funcao()))
 """
 
+
 # Exemplo 3
 
 # Vamos criar uma função para jogar a moeda (cara ou coroa)
 
-from random import random
+# from random import random
+#
+#
+# def joga_moeda():
+# 	# Gera um numero psudo-randomico entre 0 e 1
+# 	if random() > 0.5:
+# 		return 'Cara'
+# 	return 'Coroa'
+#
+#
+# print(joga_moeda())
+
+def eh_impar():
+	numero = 6
+	if numero % 2 != 0:
+		return True
+	return False
 
 
-def joga_moeda():
-	# Gera um numero psudo-randomico entre 0 e 1
-	if random() > 0.5:
-		return 'Cara'
-	return 'Coroa'
-
-
-print(joga_moeda())
+print(eh_impar())
