@@ -46,7 +46,6 @@ OBS:
 3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo multiplos valores.
 """
 
-
 """
 # Exemplo 1
 
@@ -60,6 +59,48 @@ print('Estou sendo executado após do retorno...')
 print(diz_oi())
 """
 
+"""
 # Exemplo 2
 
+def nova_funcao():
+	variavel = False
+	if variavel:
+		return 4
+	elif variavel is None:
+		return 3.2
+	return 'B'
 
+
+print(nova_funcao())
+
+
+# Exemplo 3
+
+def outra_funcao():
+	return 2, 3, 4, 5
+
+
+# num1, num2, num3, num4 = outra_funcao()
+#
+# print(num1, num2, num3, num4)
+
+print(outra_funcao())
+print(type(outra_funcao()))
+"""
+
+# Exemplo 3
+
+# Vamos criar uma função para jogar a moeda (cara ou coroa)
+
+from random import random
+
+
+def joga_moeda():
+	# Gera um numero psudo-randomico entre 0 e 1
+	valor = random()
+	if valor > 0.5:
+		return 'Cara'
+	return 'Coroa'
+
+
+print(joga_moeda())
