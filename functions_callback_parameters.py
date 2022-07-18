@@ -25,22 +25,51 @@ Funções com Parâmetro (de entrada)
 # quantos parametros forem necessários. Eles são separados por virgula.
 
 
-def soma(a, b):
-	return a + b
+# def soma(a, b):
+# 	return a + b
+#
+#
+# def multiplica(num1, num2):
+# 	return num1 * num2
+#
+#
+# def outra(num1, b):
+# 	return (num1 * b)
+#
+#
+# print(soma(2, 5))
+# print(soma(10, 30))
+#
+# print(multiplica(2, 5))
+# print(multiplica(10, 30))
+#
+# print(outra(2, 5))
+# print(outra(10, 30))
+
+def nome_completo(nome, sobrenome):
+	return f'Seu nome completo é {nome} {sobrenome}'
 
 
-def multiplica(num1, num2):
-	return num1 * num2
+print(nome_completo('Angelina0', 'Jolie'))
 
 
-def outra(num1, b):
-	return (num1 * b)
+# A diferença entre Parâmetros e argumentos
 
-print(soma(2, 5))
-print(soma(10, 30))
+# Parâmetros são variáveis declaras na definição de uma função.
+# Argumentos são dados passados durante a execução de uma função.
+# A ordem dos parâmetros importa.
 
-print(multiplica(2, 5))
-print(multiplica(10, 30))
+# Argumentos nomeados (Keyword Arguments)
 
-print(outra(2, 5))
-print(outra(10, 30))
+# Erro comum na utilização do return
+
+def soma_impares(numeros):
+	total = 0
+	for num in numeros:
+		if num % 2 != 0:
+			total = total + num
+	return total
+
+
+lista = [1, 2, 3, 4, 5, 6, 7]
+print(soma_impares(lista))
